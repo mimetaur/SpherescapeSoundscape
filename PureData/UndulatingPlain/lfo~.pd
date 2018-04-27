@@ -1,0 +1,9 @@
+#N canvas 1756 779 692 437 10;
+#X obj 158 76 loadbang;
+#X obj 116 198 hv.osc sine;
+#X obj 116 130 random 127;
+#X obj 116 160 / 256;
+#X obj 147 299 outlet~ lfo;
+#X connect 0 0 2 1;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
