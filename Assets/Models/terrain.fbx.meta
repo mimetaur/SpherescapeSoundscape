@@ -1,0 +1,216 @@
+fileFormatVersion: 2
+guid: 0565155794bf949bd91a07a8f15d2f6d
+timeCreated: 1523113290
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: CINEMA_4D_Editor
+    100002: Cloner
+    100004: Cloner_1
+    100006: Cloner_2
+    100008: Cloner_3
+    100010: Landscape
+    100012: Landscape_10
+    100014: Landscape_11
+    100016: Landscape_12
+    100018: Landscape_13
+    100020: Landscape_14
+    100022: Landscape_15
+    100024: Landscape_16
+    100026: Landscape_17
+    100028: Landscape_2
+    100030: Landscape_3
+    100032: Landscape_4
+    100034: Landscape_5
+    100036: Landscape_6
+    100038: Landscape_7
+    100040: Landscape_8
+    100042: Landscape_9
+    100044: Polygon_Reduction_0
+    100046: Polygon_Reduction_0_2
+    100048: Polygon_Reduction_0_3
+    100050: Polygon_Reduction_0_4
+    100052: Polygon_Reduction_1
+    100054: Polygon_Reduction_1_2
+    100056: Polygon_Reduction_1_3
+    100058: Polygon_Reduction_1_4
+    100060: Polygon_Reduction_2
+    100062: Polygon_Reduction_2_2
+    100064: Polygon_Reduction_2_3
+    100066: Polygon_Reduction_2_4
+    100068: Polygon_Reduction_3
+    100070: Polygon_Reduction_3_2
+    100072: Polygon_Reduction_3_3
+    100074: Polygon_Reduction_3_4
+    100076: //RootNode
+    400000: CINEMA_4D_Editor
+    400002: Cloner
+    400004: Cloner_1
+    400006: Cloner_2
+    400008: Cloner_3
+    400010: Landscape
+    400012: Landscape_10
+    400014: Landscape_11
+    400016: Landscape_12
+    400018: Landscape_13
+    400020: Landscape_14
+    400022: Landscape_15
+    400024: Landscape_16
+    400026: Landscape_17
+    400028: Landscape_2
+    400030: Landscape_3
+    400032: Landscape_4
+    400034: Landscape_5
+    400036: Landscape_6
+    400038: Landscape_7
+    400040: Landscape_8
+    400042: Landscape_9
+    400044: Polygon_Reduction_0
+    400046: Polygon_Reduction_0_2
+    400048: Polygon_Reduction_0_3
+    400050: Polygon_Reduction_0_4
+    400052: Polygon_Reduction_1
+    400054: Polygon_Reduction_1_2
+    400056: Polygon_Reduction_1_3
+    400058: Polygon_Reduction_1_4
+    400060: Polygon_Reduction_2
+    400062: Polygon_Reduction_2_2
+    400064: Polygon_Reduction_2_3
+    400066: Polygon_Reduction_2_4
+    400068: Polygon_Reduction_3
+    400070: Polygon_Reduction_3_2
+    400072: Polygon_Reduction_3_3
+    400074: Polygon_Reduction_3_4
+    400076: //RootNode
+    2000000: CINEMA_4D_Editor
+    2100000: Mat
+    2300000: Landscape_10
+    2300002: Landscape_11
+    2300004: Landscape_12
+    2300006: Landscape_13
+    2300008: Landscape_14
+    2300010: Landscape_15
+    2300012: Landscape_16
+    2300014: Landscape_17
+    2300016: Landscape_2
+    2300018: Landscape_3
+    2300020: Landscape_4
+    2300022: Landscape_5
+    2300024: Landscape_6
+    2300026: Landscape_7
+    2300028: Landscape_8
+    2300030: Landscape_9
+    3300000: Landscape_10
+    3300002: Landscape_11
+    3300004: Landscape_12
+    3300006: Landscape_13
+    3300008: Landscape_14
+    3300010: Landscape_15
+    3300012: Landscape_16
+    3300014: Landscape_17
+    3300016: Landscape_2
+    3300018: Landscape_3
+    3300020: Landscape_4
+    3300022: Landscape_5
+    3300024: Landscape_6
+    3300026: Landscape_7
+    3300028: Landscape_8
+    3300030: Landscape_9
+    4300000: Landscape_2
+    4300002: Landscape_3
+    4300004: Landscape_4
+    4300006: Landscape_5
+    4300008: Landscape_6
+    4300010: Landscape_7
+    4300012: Landscape_8
+    4300014: Landscape_9
+    4300016: Landscape_10
+    4300018: Landscape_11
+    4300020: Landscape_12
+    4300022: Landscape_13
+    4300024: Landscape_14
+    4300026: Landscape_15
+    4300028: Landscape_16
+    4300030: Landscape_17
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
