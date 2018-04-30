@@ -48,4 +48,5 @@
 
 # Project Specific
 Assets/Mega-Fiers/*.unity filter=lfs diff=lfs merge=lfs -text
+Contents/MacOS/* filter=lfs diff=lfs merge=lfs -text
 LightingData.asset filter=lfs diff=lfs merge=lfs -text
