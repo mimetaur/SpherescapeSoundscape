@@ -68,3 +68,6 @@ Recordings/
 # Cinema 4D cache files
 *.gil
 substance_cache/
+
+# Adobe audition cache files
+*.pkf
