@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 82601439785245078}
   - component: {fileID: 114853524485861258}
   - component: {fileID: 114892260912237870}
+  - component: {fileID: 114656136664602966}
   m_Layer: 0
   m_Name: SoundNet
   m_TagString: Untagged
@@ -63,7 +64,8 @@ AudioSource:
   m_GameObject: {fileID: 1059558309764030}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243836308778020614, guid: 5840ca16e726f4946b449e6366c16366,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -135,6 +137,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114656136664602966
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1059558309764030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38d20b0540b7347cc8712feae816a053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballType: {fileID: 1878592802571928, guid: 2e13db36ecbb34b68824633e5335f70e, type: 2}
+  octave: 0
 --- !u!114 &114853524485861258
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da65695d7280f48aba91f49cc195205a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bang: 0.148
 --- !u!114 &114892260912237870
 MonoBehaviour:
   m_ObjectHideFlags: 1
