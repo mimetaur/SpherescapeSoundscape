@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1928,6 +1928,10 @@ Prefab:
       propertyPath: m_Name
       value: SoundNet (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8a358267c009483cb37d039ea38caab, type: 2}
   m_IsPrefabParent: 0
@@ -2070,6 +2074,10 @@ Prefab:
     - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
       propertyPath: m_Name
       value: SoundNet (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8a358267c009483cb37d039ea38caab, type: 2}
@@ -3092,6 +3100,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8a358267c009483cb37d039ea38caab, type: 2}
   m_IsPrefabParent: 0
@@ -3137,6 +3149,10 @@ Prefab:
     - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
       propertyPath: m_Name
       value: SoundNet (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8a358267c009483cb37d039ea38caab, type: 2}
@@ -3303,9 +3319,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1878592802571928, guid: 2e13db36ecbb34b68824633e5335f70e, type: 2}
   area: {fileID: 79992941}
-  numSimultaneousBalls: 64
+  numSimultaneousBalls: 32
   initialDelay: 1
-  spawnRate: 8
+  spawnRate: 12
   useRandomBallTypes: 1
   ballTypes:
   - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
