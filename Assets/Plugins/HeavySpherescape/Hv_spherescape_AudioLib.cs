@@ -62,23 +62,20 @@ public class Hv_spherescape_Editor : Editor {
     if (!isEnabled) {
       EditorGUILayout.LabelField("Press Play!",  EditorStyles.centeredGreyMiniLabel);
     }
+    // events
+    GUI.enabled = isEnabled;
+    EditorGUILayout.Space();
+    // bang
+    if (GUILayout.Button("bang")) {
+      _dsp.SendEvent(Hv_spherescape_AudioLib.Event.Bang);
+    }
+    
     GUILayout.EndVertical();
 
     // parameters
     GUI.enabled = true;
     GUILayout.BeginVertical();
     EditorGUILayout.Space();
-    EditorGUI.indentLevel++;
-    
-    // bang
-    GUILayout.BeginHorizontal();
-    float bang = _dsp.GetFloatParameter(Hv_spherescape_AudioLib.Parameter.Bang);
-    float newBang = EditorGUILayout.Slider("bang", bang, 0.0f, 1.0f);
-    if (bang != newBang) {
-      _dsp.SetFloatParameter(Hv_spherescape_AudioLib.Parameter.Bang, newBang);
-    }
-    GUILayout.EndHorizontal();
-    EditorGUI.indentLevel--;
   }
 }
 #endif // UNITY_EDITOR
@@ -86,17 +83,15 @@ public class Hv_spherescape_Editor : Editor {
 [RequireComponent (typeof (AudioSource))]
 public class Hv_spherescape_AudioLib : MonoBehaviour {
   
-  // Parameters are used to send float messages into the patch context (thread-safe).
+  // Events are used to trigger bangs in the patch context (thread-safe).
   // Example usage:
   /*
     void Start () {
         Hv_spherescape_AudioLib script = GetComponent<Hv_spherescape_AudioLib>();
-        // Get and set a parameter
-        float bang = script.GetFloatParameter(Hv_spherescape_AudioLib.Parameter.Bang);
-        script.SetFloatParameter(Hv_spherescape_AudioLib.Parameter.Bang, bang + 0.1f);
+        script.SendEvent(Hv_spherescape_AudioLib.Event.Bang);
     }
   */
-  public enum Parameter : uint {
+  public enum Event : uint {
     Bang = 0xFFFFFFFF,
   }
   
@@ -124,7 +119,6 @@ public class Hv_spherescape_AudioLib : MonoBehaviour {
   }
   public delegate void FloatMessageReceived(FloatMessage message);
   public FloatMessageReceived FloatReceivedCallback;
-  public float bang = 0.5f;
 
   // internal state
   private Hv_spherescape_Context _context;
@@ -137,24 +131,9 @@ public class Hv_spherescape_AudioLib : MonoBehaviour {
     _context.RegisterSendHook();
   }
   
-  // see Hv_spherescape_AudioLib.Parameter for definitions
-  public float GetFloatParameter(Hv_spherescape_AudioLib.Parameter param) {
-    switch (param) {
-      case Parameter.Bang: return bang;
-      default: return 0.0f;
-    }
-  }
-
-  public void SetFloatParameter(Hv_spherescape_AudioLib.Parameter param, float x) {
-    switch (param) {
-      case Parameter.Bang: {
-        x = Mathf.Clamp(x, 0.0f, 1.0f);
-        bang = x;
-        break;
-      }
-      default: return;
-    }
-    if (IsInstantiated()) _context.SendFloatToReceiver((uint) param, x);
+  // see Hv_spherescape_AudioLib.Event for definitions
+  public void SendEvent(Hv_spherescape_AudioLib.Event e) {
+    if (IsInstantiated()) _context.SendBangToReceiver((uint) e);
   }
   
   public void FillTableWithMonoAudioClip(string tableName, AudioClip clip) {
@@ -174,10 +153,6 @@ public class Hv_spherescape_AudioLib : MonoBehaviour {
 
   private void Awake() {
     _context = new Hv_spherescape_Context((double) AudioSettings.outputSampleRate);
-  }
-  
-  private void Start() {
-    _context.SendFloatToReceiver((uint) Parameter.Bang, bang);
   }
   
   private void Update() {
