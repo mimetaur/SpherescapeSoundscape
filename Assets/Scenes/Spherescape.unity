@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,6 @@ GameObject:
   - component: {fileID: 1015530772}
   - component: {fileID: 1015530771}
   - component: {fileID: 1015530770}
-  - component: {fileID: 1015530774}
   - component: {fileID: 1015530775}
   m_Layer: 0
   m_Name: Main Camera
@@ -2014,17 +2013,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 33, y: -30, z: 0}
---- !u!114 &1015530774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1015530769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1015530775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3317,7 +3305,7 @@ MonoBehaviour:
   area: {fileID: 79992941}
   numSimultaneousBalls: 64
   initialDelay: 1
-  spawnRate: 6
+  spawnRate: 8
   useRandomBallTypes: 1
   ballTypes:
   - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
@@ -3367,7 +3355,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7a7a755abc3f94553876487b0b0d5013, type: 3}
   - {fileID: 8300000, guid: ae1ae8aa1c45c446fbf77a902e51305c, type: 3}
   - {fileID: 8300000, guid: 0e989a32ebcee40b3b3e1e1101c96269, type: 3}
-  ambientVolume: 0.4
+  ambientVolume: 0.8
 --- !u!82 &1996816364
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3436,7 +3424,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
