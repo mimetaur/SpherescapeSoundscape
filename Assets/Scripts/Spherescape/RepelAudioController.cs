@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class RepelAudioController : MonoBehaviour
 {
-    public int[] allNotes;
-    public int currentNote;
+    public int currentNote = 64;
     public float updateRate = 5.0f;
 
+    private BallMusicalNotes ballMusicalNotes;
     private Hv_spherescapeRepel_AudioLib heavyScript;
     private Repel repel;
 
     // Use this for initialization
     void Start()
     {
+        ballMusicalNotes = GameObject.Find("GameManager").GetComponent<BallMusicalNotes>();
         repel = GetComponent<Repel>();
         heavyScript = GetComponent<Hv_spherescapeRepel_AudioLib>();
-        currentNote = allNotes[Random.Range(0, allNotes.Length)];
         heavyScript.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Noteasnumber, (float)currentNote);
 
         // this parameter and the the rate of update are in sync

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attractionRadius: 200
-  attractionForce: 60
+  attractionForce: 70
   tagToAttract: Repel
 --- !u!54 &1199501669
 Rigidbody:
@@ -2400,7 +2400,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1199501667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.6, y: -1, z: -2.9}
+  m_LocalPosition: {x: -54.6, y: -1, z: 11.5}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3220,9 +3220,8 @@ GameObject:
   - component: {fileID: 1996816359}
   - component: {fileID: 1996816360}
   - component: {fileID: 1996816361}
-  - component: {fileID: 1996816364}
-  - component: {fileID: 1996816363}
   - component: {fileID: 1996816365}
+  - component: {fileID: 1996816362}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3287,11 +3286,11 @@ MonoBehaviour:
   ball: {fileID: 1878592802571928, guid: 38d992a8f32e34e4bb0c916ab0b71bf8, type: 2}
   area: {fileID: 1407453828}
   numSimultaneousBalls: 3
-  initialDelay: 8
+  initialDelay: 4
   spawnRate: 12
   useRandomBallTypes: 0
   ballTypes: []
---- !u!114 &1996816363
+--- !u!114 &1996816362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3299,97 +3298,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1996816358}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c374766f9c21f4a91afbce2294c64eb5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0ebb52014e7c04433b8528e600932fbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1996816364}
-  ambientClips:
-  - {fileID: 8300000, guid: 5075f686d5c564559bb975e375d3d782, type: 3}
-  - {fileID: 8300000, guid: 7a7a755abc3f94553876487b0b0d5013, type: 3}
-  - {fileID: 8300000, guid: ae1ae8aa1c45c446fbf77a902e51305c, type: 3}
-  - {fileID: 8300000, guid: 0e989a32ebcee40b3b3e1e1101c96269, type: 3}
-  ambientVolume: 0.8
---- !u!82 &1996816364
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1996816358}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243937615991165466, guid: 5840ca16e726f4946b449e6366c16366,
-    type: 2}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 100
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  scale: 240000002a00000022000000280000002b00000032000000
+  addOctaveUp: 0
+  addOctaveDown: 0
 --- !u!114 &1996816365
 MonoBehaviour:
   m_ObjectHideFlags: 0
