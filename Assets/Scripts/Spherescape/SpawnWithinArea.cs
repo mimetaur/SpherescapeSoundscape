@@ -26,7 +26,7 @@ public class SpawnWithinArea : MonoBehaviour
 
     private void SpawnBall()
     {
-        playAmbience.PlayAmbientClip();
+        if (ball.tag == "Ball") playAmbience.PlayAmbientClip();
         for (int i = 0; i < numSimultaneousBalls; i++)
         {
             var location = GameUtils.RandomPointInBounds(bounds);
