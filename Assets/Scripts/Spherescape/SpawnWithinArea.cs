@@ -13,12 +13,12 @@ public class SpawnWithinArea : MonoBehaviour
     public bool useRandomBallTypes = false;
     public BallType[] ballTypes;
 
+    private BallMusicalNotes ballMusicalNotes;
     private Bounds bounds;
-    private PlayAmbience playAmbience;
 
     private void Start()
     {
-        playAmbience = GetComponent<PlayAmbience>();
+        ballMusicalNotes = GetComponent<BallMusicalNotes>();
         var collider = area.GetComponent<BoxCollider>();
         if (collider != null) bounds = collider.bounds;
         InvokeRepeating("SpawnBall", initialDelay, spawnRate);
@@ -26,11 +26,17 @@ public class SpawnWithinArea : MonoBehaviour
 
     private void SpawnBall()
     {
-        if (ball.tag == "Ball") playAmbience.PlayAmbientClip();
         for (int i = 0; i < numSimultaneousBalls; i++)
         {
             var location = GameUtils.RandomPointInBounds(bounds);
             GameObject obj = Instantiate(ball, location, Quaternion.identity);
+
+            var audioController = obj.GetComponent<RepelAudioController>();
+            if (audioController != null)
+            {
+                audioController.currentNote = ballMusicalNotes.GetNextNote();
+            }
+
             if (useRandomBallTypes) CustomizeNewBall(obj);
         }
     }

@@ -23,10 +23,12 @@ GameObject:
   - component: {fileID: 23793947354503540}
   - component: {fileID: 54660921813202752}
   - component: {fileID: 135793516815263268}
+  - component: {fileID: 114814596987493968}
   - component: {fileID: 114100137542324136}
   - component: {fileID: 82340763302265128}
   - component: {fileID: 114203799856643274}
   - component: {fileID: 114902471107094526}
+  - component: {fileID: 114025290635308454}
   m_Layer: 0
   m_Name: RepelSphere
   m_TagString: Repel
@@ -190,6 +192,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114025290635308454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1878592802571928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86574725224cd4def8b53542081a1dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brightColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 1}
+  brightnessFactor: 3
 --- !u!114 &114100137542324136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -222,6 +237,18 @@ MonoBehaviour:
   intensityToFilterAmount: 76.5
   intensityTolfoSpeed: 40
   noteAsNumber: 64
+--- !u!114 &114814596987493968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1878592802571928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd75beaf887624c1dbb72c3fefed36d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifespan: 60
 --- !u!114 &114902471107094526
 MonoBehaviour:
   m_ObjectHideFlags: 1
