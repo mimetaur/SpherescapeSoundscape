@@ -121,7 +121,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 166
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -153,7 +153,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.903
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -197,6 +197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   repelRadius: 8
   repelForce: 480
+  expectedMaxNumberOfBallsRepelling: 20
   numberOfBallsRepelling: 0
   tagToRepel: Ball
 --- !u!114 &114203799856643274
@@ -211,8 +212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intensity: 0
-  intensity_to_filter_amount: 26
-  intensity_to_lfo_speed: 40
+  intensityToFilterAmount: 47.7
+  intensityTolfoSpeed: 40
+  noteAsNumber: 64
 --- !u!114 &114902471107094526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,6 +226,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c738b0270350d42fea3e439bd6fce935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allNotes: 240000002a00000022000000280000002b00000032000000
+  currentNote: 0
 --- !u!135 &135793516815263268
 SphereCollider:
   m_ObjectHideFlags: 1

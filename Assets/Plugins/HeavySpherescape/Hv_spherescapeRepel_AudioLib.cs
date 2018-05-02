@@ -79,21 +79,30 @@ public class Hv_spherescapeRepel_Editor : Editor {
     }
     GUILayout.EndHorizontal();
     
-    // intensity_to_filter_amount
+    // intensityToFilterAmount
     GUILayout.BeginHorizontal();
-    float intensity_to_filter_amount = _dsp.GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensity_to_filter_amount);
-    float newIntensity_to_filter_amount = EditorGUILayout.Slider("intensity_to_filter_amount", intensity_to_filter_amount, 0.0f, 127.0f);
-    if (intensity_to_filter_amount != newIntensity_to_filter_amount) {
-      _dsp.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensity_to_filter_amount, newIntensity_to_filter_amount);
+    float intensityToFilterAmount = _dsp.GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensitytofilteramount);
+    float newIntensitytofilteramount = EditorGUILayout.Slider("intensityToFilterAmount", intensityToFilterAmount, 0.0f, 127.0f);
+    if (intensityToFilterAmount != newIntensitytofilteramount) {
+      _dsp.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensitytofilteramount, newIntensitytofilteramount);
     }
     GUILayout.EndHorizontal();
     
-    // intensity_to_lfo_speed
+    // intensityTolfoSpeed
     GUILayout.BeginHorizontal();
-    float intensity_to_lfo_speed = _dsp.GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensity_to_lfo_speed);
-    float newIntensity_to_lfo_speed = EditorGUILayout.Slider("intensity_to_lfo_speed", intensity_to_lfo_speed, 1.0f, 80.0f);
-    if (intensity_to_lfo_speed != newIntensity_to_lfo_speed) {
-      _dsp.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensity_to_lfo_speed, newIntensity_to_lfo_speed);
+    float intensityTolfoSpeed = _dsp.GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensitytolfospeed);
+    float newIntensitytolfospeed = EditorGUILayout.Slider("intensityTolfoSpeed", intensityTolfoSpeed, 1.0f, 80.0f);
+    if (intensityTolfoSpeed != newIntensitytolfospeed) {
+      _dsp.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensitytolfospeed, newIntensitytolfospeed);
+    }
+    GUILayout.EndHorizontal();
+    
+    // noteAsNumber
+    GUILayout.BeginHorizontal();
+    float noteAsNumber = _dsp.GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Noteasnumber);
+    float newNoteasnumber = EditorGUILayout.Slider("noteAsNumber", noteAsNumber, 0.0f, 127.0f);
+    if (noteAsNumber != newNoteasnumber) {
+      _dsp.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Noteasnumber, newNoteasnumber);
     }
     GUILayout.EndHorizontal();
     EditorGUI.indentLevel--;
@@ -116,8 +125,9 @@ public class Hv_spherescapeRepel_AudioLib : MonoBehaviour {
   */
   public enum Parameter : uint {
     Intensity = 0x3D836879,
-    Intensity_to_filter_amount = 0xDBAB294C,
-    Intensity_to_lfo_speed = 0x42731A8F,
+    Intensitytofilteramount = 0x3E7A0BE5,
+    Intensitytolfospeed = 0x5FB8E64B,
+    Noteasnumber = 0xDF9558A2,
   }
   
   // Delegate method for receiving float messages from the patch context (thread-safe).
@@ -145,8 +155,9 @@ public class Hv_spherescapeRepel_AudioLib : MonoBehaviour {
   public delegate void FloatMessageReceived(FloatMessage message);
   public FloatMessageReceived FloatReceivedCallback;
   public float intensity = 0.0f;
-  public float intensity_to_filter_amount = 0.0f;
-  public float intensity_to_lfo_speed = 40.0f;
+  public float intensityToFilterAmount = 0.0f;
+  public float intensityTolfoSpeed = 40.0f;
+  public float noteAsNumber = 64.0f;
 
   // internal state
   private Hv_spherescapeRepel_Context _context;
@@ -163,8 +174,9 @@ public class Hv_spherescapeRepel_AudioLib : MonoBehaviour {
   public float GetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter param) {
     switch (param) {
       case Parameter.Intensity: return intensity;
-      case Parameter.Intensity_to_filter_amount: return intensity_to_filter_amount;
-      case Parameter.Intensity_to_lfo_speed: return intensity_to_lfo_speed;
+      case Parameter.Intensitytofilteramount: return intensityToFilterAmount;
+      case Parameter.Intensitytolfospeed: return intensityTolfoSpeed;
+      case Parameter.Noteasnumber: return noteAsNumber;
       default: return 0.0f;
     }
   }
@@ -176,14 +188,19 @@ public class Hv_spherescapeRepel_AudioLib : MonoBehaviour {
         intensity = x;
         break;
       }
-      case Parameter.Intensity_to_filter_amount: {
+      case Parameter.Intensitytofilteramount: {
         x = Mathf.Clamp(x, 0.0f, 127.0f);
-        intensity_to_filter_amount = x;
+        intensityToFilterAmount = x;
         break;
       }
-      case Parameter.Intensity_to_lfo_speed: {
+      case Parameter.Intensitytolfospeed: {
         x = Mathf.Clamp(x, 1.0f, 80.0f);
-        intensity_to_lfo_speed = x;
+        intensityTolfoSpeed = x;
+        break;
+      }
+      case Parameter.Noteasnumber: {
+        x = Mathf.Clamp(x, 0.0f, 127.0f);
+        noteAsNumber = x;
         break;
       }
       default: return;
@@ -212,8 +229,9 @@ public class Hv_spherescapeRepel_AudioLib : MonoBehaviour {
   
   private void Start() {
     _context.SendFloatToReceiver((uint) Parameter.Intensity, intensity);
-    _context.SendFloatToReceiver((uint) Parameter.Intensity_to_filter_amount, intensity_to_filter_amount);
-    _context.SendFloatToReceiver((uint) Parameter.Intensity_to_lfo_speed, intensity_to_lfo_speed);
+    _context.SendFloatToReceiver((uint) Parameter.Intensitytofilteramount, intensityToFilterAmount);
+    _context.SendFloatToReceiver((uint) Parameter.Intensitytolfospeed, intensityTolfoSpeed);
+    _context.SendFloatToReceiver((uint) Parameter.Noteasnumber, noteAsNumber);
   }
   
   private void Update() {
@@ -326,7 +344,7 @@ class Hv_spherescapeRepel_Context {
 
   private delegate void SendHook(IntPtr context, string sendName, uint sendHash, IntPtr message);
 
-  public Hv_spherescapeRepel_Context(double sampleRate, int poolKb=10, int inQueueKb=3, int outQueueKb=2) {
+  public Hv_spherescapeRepel_Context(double sampleRate, int poolKb=10, int inQueueKb=4, int outQueueKb=2) {
     gch = GCHandle.Alloc(msgQueue);
     _context = hv_spherescapeRepel_new_with_options(sampleRate, poolKb, inQueueKb, outQueueKb);
     hv_setPrintHook(_context, new PrintHook(OnPrint));
