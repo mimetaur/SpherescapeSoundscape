@@ -6,6 +6,7 @@ public class Repel : MonoBehaviour
 {
     public float repelRadius = 2;
     public float repelForce = 1;
+    public int expectedMaxNumberOfBallsRepelling = 10;
     public int numberOfBallsRepelling;
     public string tagToRepel;
 

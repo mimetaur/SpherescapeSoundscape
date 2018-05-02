@@ -1,51 +1,36 @@
-#N canvas 124 34 1459 791 10;
+#N canvas 630 52 1459 791 10;
 #X declare -path heavylib;
-#X obj 803 108 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 254 200 tabread c_mystic_chord;
-#X obj 803 55 loadbang;
-#X msg 803 159 \; c_mystic_chord 0 36 42 34 40 43 50;
-#X obj 244 49 loadbang;
-#X obj 254 244 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 42 256;
-#X obj 295 633 dac~;
-#X obj 289 554 voice~;
+#X obj 247 75 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 297 525 dac~;
+#X obj 303 430 voice~;
 #X obj 46 22 declare -path heavylib;
-#X obj 407 174 r intensity @hv_param 0 127 0;
-#X obj 245 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 794 218 table c_mystic_chord 6;
+#X obj 424 27 r intensity @hv_param 0 127 0;
 #X text 1530 230 6 is hardcoded for now;
-#X text 307 116 6 is hardcoded for now;
-#X obj 244 118 random 6;
-#X text 100 243 random pitch from table;
-#X obj 433 200 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 450 53 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 478 273 hsl 128 15 1 80 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 495 136 hsl 128 15 1 80 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 471 363 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 80 256;
-#X obj 462 326 -, f 4;
-#X msg 461 301 81 \$1;
-#X obj 458 244 r intensity_to_lfo_speed @hv_param 1 80 40;
-#X obj 584 370 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 472 239 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X obj 471 210 -, f 4;
+#X msg 470 185 81 \$1;
+#X obj 488 315 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 563 344 r intensity_to_filter_amount @hv_param 0 127 0;
-#X connect 0 0 3 0;
-#X connect 1 0 5 0;
-#X connect 2 0 0 0;
-#X connect 4 0 10 0;
-#X connect 5 0 7 0;
-#X connect 7 0 6 0;
-#X connect 7 0 6 1;
-#X connect 9 0 7 1;
-#X connect 10 0 14 0;
-#X connect 14 0 1 0;
-#X connect 16 0 7 1;
-#X connect 17 0 20 0;
-#X connect 19 0 18 0;
-#X connect 19 0 7 2;
-#X connect 20 0 19 0;
-#X connect 21 0 20 0;
-#X connect 22 0 7 3;
-#X connect 23 0 7 3;
+#X text 520 197 inverting value;
+#X obj 211 19 r noteAsNumber @hv_param 0 127 64;
+#X obj 458 103 r intensityTolfoSpeed @hv_param 1 80 40;
+#X obj 467 289 r intensityToFilterAmount @hv_param 0 127 0;
+#X connect 0 0 2 0;
+#X connect 2 0 1 0;
+#X connect 2 0 1 1;
+#X connect 4 0 2 1;
+#X connect 6 0 2 1;
+#X connect 7 0 10 0;
+#X connect 9 0 8 0;
+#X connect 9 0 2 2;
+#X connect 10 0 9 0;
+#X connect 11 0 2 3;
+#X connect 13 0 0 0;
+#X connect 14 0 10 0;
+#X connect 15 0 2 3;
