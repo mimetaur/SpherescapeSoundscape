@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3094,66 +3094,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1732996134}
   m_Mesh: {fileID: 4300014, guid: 0565155794bf949bd91a07a8f15d2f6d, type: 3}
---- !u!1001 &1938217405
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 16.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4324876227162544, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_Name
-      value: SoundNet (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1059558309764030, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65388610497053468, guid: d8a358267c009483cb37d039ea38caab,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 5.3480015
-      objectReference: {fileID: 0}
-    - target: {fileID: 65388610497053468, guid: d8a358267c009483cb37d039ea38caab,
-        type: 2}
-      propertyPath: m_Center.x
-      value: 18.75457
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d8a358267c009483cb37d039ea38caab, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1989713056
 GameObject:
   m_ObjectHideFlags: 0

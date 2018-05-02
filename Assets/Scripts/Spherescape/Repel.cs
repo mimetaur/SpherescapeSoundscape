@@ -6,11 +6,15 @@ public class Repel : MonoBehaviour
 {
     public float repelRadius = 2;
     public float repelForce = 1;
+    public int numberOfBallsRepelling;
     public string tagToRepel;
 
     public void FixedUpdate()
     {
-        foreach (Collider theCollider in Physics.OverlapSphere(transform.position, repelRadius))
+        var overlappingColliders = Physics.OverlapSphere(transform.position, repelRadius);
+        numberOfBallsRepelling = overlappingColliders.Length;
+
+        foreach (Collider theCollider in overlappingColliders)
         {
             if (theCollider.tag == tagToRepel)
             {

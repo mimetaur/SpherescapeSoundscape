@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallAudioController : MonoBehaviour
 {
-    Hv_spherescape_AudioLib heavyScript;
+    private Hv_spherescape_AudioLib heavyScript;
 
     void Start()
     {
