@@ -124,7 +124,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 166
-  DopplerLevel: 2
+  DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -205,6 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brightColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 1}
   brightnessFactor: 3
+  updateRate: 1
 --- !u!114 &114100137542324136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -248,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd75beaf887624c1dbb72c3fefed36d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifespan: 60
+  lifespan: 80
 --- !u!114 &114902471107094526
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,9 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c738b0270350d42fea3e439bd6fce935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  allNotes: 240000002a00000022000000280000002b00000032000000
   currentNote: 0
-  updateRate: 5
+  updateRate: 2
 --- !u!135 &135793516815263268
 SphereCollider:
   m_ObjectHideFlags: 1
