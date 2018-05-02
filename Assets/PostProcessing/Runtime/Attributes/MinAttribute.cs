@@ -1,9 +1,6 @@
-using System;
-
-namespace UnityEngine.Rendering.PostProcessing
+namespace UnityEngine.PostProcessing
 {
-    [AttributeUsage(AttributeTargets.Field, AllowMultiple = false)]
-    public sealed class MinAttribute : Attribute
+    public sealed class MinAttribute : PropertyAttribute
     {
         public readonly float min;
 
