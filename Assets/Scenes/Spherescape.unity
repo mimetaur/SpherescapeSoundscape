@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3257,7 +3257,7 @@ MonoBehaviour:
   ball: {fileID: 1878592802571928, guid: 2e13db36ecbb34b68824633e5335f70e, type: 2}
   area: {fileID: 79992941}
   numSimultaneousBalls: 32
-  initialDelay: 1
+  initialDelay: 4
   spawnRate: 12
   useRandomBallTypes: 1
   ballTypes:
@@ -3286,9 +3286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1878592802571928, guid: 38d992a8f32e34e4bb0c916ab0b71bf8, type: 2}
   area: {fileID: 1407453828}
-  numSimultaneousBalls: 2
-  initialDelay: 6
-  spawnRate: 8
+  numSimultaneousBalls: 3
+  initialDelay: 8
+  spawnRate: 12
   useRandomBallTypes: 0
   ballTypes: []
 --- !u!114 &1996816363
