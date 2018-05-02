@@ -1,26 +1,32 @@
-#N canvas 630 52 1459 791 10;
+#N canvas 629 52 1459 791 10;
 #X declare -path heavylib;
-#X obj 247 75 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 213 106 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
-#X obj 297 525 dac~;
-#X obj 303 430 voice~;
+#X obj 279 699 dac~;
+#X obj 291 608 voice~, f 27;
 #X obj 46 22 declare -path heavylib;
-#X obj 424 27 r intensity @hv_param 0 127 0;
+#X obj 341 57 r intensity @hv_param 0 127 0;
 #X text 1530 230 6 is hardcoded for now;
-#X obj 450 53 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 367 83 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 495 136 hsl 128 15 1 80 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 798 175 hsl 128 15 1 80 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X obj 472 239 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
-#X obj 471 210 -, f 4;
-#X msg 470 185 81 \$1;
-#X obj 488 315 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 775 278 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 80 256;
+#X obj 774 249 -, f 4;
+#X msg 773 224 81 \$1;
+#X obj 890 327 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
-#X text 520 197 inverting value;
+#X text 823 236 inverting value;
 #X obj 211 19 r noteAsNumber @hv_param 0 127 64;
-#X obj 458 103 r intensityTolfoSpeed @hv_param 1 80 40;
-#X obj 467 289 r intensityToFilterAmount @hv_param 0 127 0;
+#X obj 761 142 r intensityTolfoSpeed @hv_param 1 80 40;
+#X obj 569 84 hsl 128 15 0 20 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 543 58 r intensityFadeTime @hv_param 0 20 5;
+#X text 536 173 use seconds in unity \, ms in PD;
+#X msg 236 61 40;
+#X obj 490 174 * 1000;
+#X obj 869 301 r intensityToFilterAmount @hv_param 0 127 30;
 #X connect 0 0 2 0;
 #X connect 2 0 1 0;
 #X connect 2 0 1 1;
@@ -28,9 +34,13 @@
 #X connect 6 0 2 1;
 #X connect 7 0 10 0;
 #X connect 9 0 8 0;
-#X connect 9 0 2 2;
+#X connect 9 0 2 3;
 #X connect 10 0 9 0;
-#X connect 11 0 2 3;
+#X connect 11 0 2 4;
 #X connect 13 0 0 0;
 #X connect 14 0 10 0;
-#X connect 15 0 2 3;
+#X connect 15 0 19 0;
+#X connect 16 0 19 0;
+#X connect 18 0 0 0;
+#X connect 19 0 2 2;
+#X connect 20 0 2 4;
