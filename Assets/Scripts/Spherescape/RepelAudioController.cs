@@ -6,6 +6,7 @@ public class RepelAudioController : MonoBehaviour
 {
     public int[] allNotes;
     public int currentNote;
+    public float updateRate = 5.0f;
 
     private Hv_spherescapeRepel_AudioLib heavyScript;
     private Repel repel;
@@ -18,7 +19,10 @@ public class RepelAudioController : MonoBehaviour
         currentNote = allNotes[Random.Range(0, allNotes.Length)];
         heavyScript.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Noteasnumber, (float)currentNote);
 
-        InvokeRepeating("UpdateCount", 2.0f, 2.0f);
+        // this parameter and the the rate of update are in sync
+        heavyScript.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Intensityfadetime, updateRate);
+
+        InvokeRepeating("UpdateCount", updateRate, updateRate);
     }
 
     void UpdateCount()

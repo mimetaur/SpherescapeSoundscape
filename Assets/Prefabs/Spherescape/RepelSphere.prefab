@@ -122,11 +122,11 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 166
-  DopplerLevel: 1
+  DopplerLevel: 2
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -135,19 +135,25 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 1
+      value: 1.0037842
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
+      time: 0.25710207
+      value: 0.32228065
+      inSlope: -1.488924
+      outSlope: -1.488924
+      tangentMode: 0
+    - serializedVersion: 2
       time: 1
-      value: 0
+      value: 0.0037841797
       inSlope: 0
       outSlope: 0
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -165,7 +171,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.8833333
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -212,7 +218,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   intensity: 0
-  intensityToFilterAmount: 47.7
+  intensityFadeTime: 5
+  intensityToFilterAmount: 76.5
   intensityTolfoSpeed: 40
   noteAsNumber: 64
 --- !u!114 &114902471107094526
@@ -228,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allNotes: 240000002a00000022000000280000002b00000032000000
   currentNote: 0
+  updateRate: 5
 --- !u!135 &135793516815263268
 SphereCollider:
   m_ObjectHideFlags: 1
