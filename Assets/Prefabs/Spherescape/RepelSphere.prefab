@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repelRadius: 8
-  repelForce: 240
+  repelForce: 480
   tagToRepel: Ball
 --- !u!135 &135793516815263268
 SphereCollider:
