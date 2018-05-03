@@ -556,9 +556,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3994e0a802af940f581f9b1b6ec8cfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metallicCycleTime: 10
-  iceCycleTime: 30
-  echoCycleTime: 60
+  metallicCycleTime: 15
+  iceCycleTime: 35
+  echoCycleTime: 65
 --- !u!1 &679663022
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 164056008}
-  angle: 0.06
+  angle: 3
+  initialDelay: 5
 --- !u!1 &830396496
 GameObject:
   m_ObjectHideFlags: 0
