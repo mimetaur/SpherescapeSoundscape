@@ -5,8 +5,13 @@ using UnityEngine;
 public class RepelAudioController : MonoBehaviour
 {
     public int currentNote = 64;
-    public float updateRate = 5.0f;
 
+    [Range(1, 20)]
+    public float updateRateLow = 2.0f;
+    [Range(1, 20)]
+    public float updateRateHigh = 6.0f;
+
+    private float updateRate;
     private BallMusicalNotes ballMusicalNotes;
     private Hv_spherescapeRepel_AudioLib heavyScript;
     private Repel repel;
@@ -14,6 +19,8 @@ public class RepelAudioController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        updateRate = Random.Range(updateRateLow, updateRateHigh);
+
         ballMusicalNotes = GameObject.Find("GameManager").GetComponent<BallMusicalNotes>();
         repel = GetComponent<Repel>();
         heavyScript = GetComponent<Hv_spherescapeRepel_AudioLib>();
