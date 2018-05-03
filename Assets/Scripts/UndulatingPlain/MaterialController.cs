@@ -23,12 +23,8 @@ public class MaterialController : MonoBehaviour
         ProceduralMaterial substance = rend.sharedMaterial as ProceduralMaterial;
         if (substance)
         {
-            float metalLerp = Mathf.PingPong(Time.time * 2 / plainManager.metallicCycleTime, 0.5f) + 0.5f;
-            substance.SetProceduralFloat(UndulatingPlainConstants.metallicSubstancePropertyName, metalLerp);
-
-            float iceLerp = Mathf.PingPong(Time.time * 2 / plainManager.iceCycleTime, 1.0f);
-            substance.SetProceduralFloat(UndulatingPlainConstants.iceSubstancePropertyName, iceLerp);
-
+            substance.SetProceduralFloat(UndulatingPlainConstants.metallicSubstancePropertyName, plainManager.GetMetalLerp());
+            substance.SetProceduralFloat(UndulatingPlainConstants.iceSubstancePropertyName, plainManager.GetIceLerp());
             substance.RebuildTextures();
         }
     }
