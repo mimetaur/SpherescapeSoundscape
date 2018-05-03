@@ -9,6 +9,7 @@ public class UndulatingAudioController : MonoBehaviour
     public RangeFloat cutoffRange = new RangeFloat(500f, 1200f);
     public RangeFloat resonanceRange = new RangeFloat(1f, 2.5f);
     public RangeFloat echoRange = new RangeFloat(0.2f, 0.8f);
+    public RangeFloat ampRange = new RangeFloat(0f, -10f);
 
     private Hv_prototype03_AudioLib heavyScript;
     private PlainManager plainManager;
@@ -43,7 +44,10 @@ public class UndulatingAudioController : MonoBehaviour
         float echoParam = GameUtils.Map(echoLerp, 0f, 1f, echoRange.Low(), echoRange.High());
         mixer.SetFloat("EchoDecay", echoParam);
 
-        // float metalLerp = plainManager.GetMetalLerp();
+        float metalLerp = plainManager.GetMetalLerp();
+        float ampParam = GameUtils.Map(metalLerp, 0.5f, 1f, ampRange.Low(), ampRange.High());
+        mixer.SetFloat("MasterVolume", ampParam);
+
         // float cutoffParam = GameUtils.Map(iceLerp, 0f, 1f, 500f, 1200.0f);
         // float metalParam = GameUtils.Map(metalLerp, 0.5f, 1f, 0f, 127f);
         // float cutoffParam = GameUtils.Map(metalLerp, 0.5f, 1f, 0f, 1200.0f);
