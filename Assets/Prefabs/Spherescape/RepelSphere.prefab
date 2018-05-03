@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98188bb01fda4ed185de0ecb27d8746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repelRadius: 4
+  repelRadius: 6
   repelForce: 480
   expectedMaxNumberOfBallsRepelling: 25
   numberOfBallsRepelling: 0
@@ -261,8 +261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c738b0270350d42fea3e439bd6fce935, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentNote: 0
-  updateRateLow: 2
+  currentNote: 64
+  updateRateLow: 4
   updateRateHigh: 6
 --- !u!135 &135793516815263268
 SphereCollider:
