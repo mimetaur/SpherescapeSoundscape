@@ -14,7 +14,11 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
+  m_ExposedParameters:
+  - guid: 190efd56fcf0447cd901b88294ee42de
+    name: LowpassResonance
+  - guid: 85ac00436a4a241a3a2e6474a1fce408
+    name: LowpassCutoff
   m_AudioMixerGroupViews:
   - guids:
     - b0aafb1c81d24499cafd631b924f48d0
@@ -65,18 +69,20 @@ AudioMixerSnapshotController:
   m_SnapshotID: b856795431fc745da81f878920e522bc
   m_FloatValues:
     94205f20167714561a9ebc231f8870f2: 58
+    b68d699069bf443439a79ca46661a9e8: 0.80300003
     966e9731b59a5443f8840addc34a5410: 1.735
     c7befd12b2a124926ae8be4b395b0b7d: 1.59
     5f2567b2c57fb44f791e8942fb005e5b: 0
     03204ab2b69ac4fd598471a62f9bdb15: 0.78
     85ac00436a4a241a3a2e6474a1fce408: 1107
-    c17622b36ed0e49138b83f69551cd881: 0.355
+    c17622b36ed0e49138b83f69551cd881: 0.207
     9cdf12f3a4255485ead45557cd397e03: 1
     a0caa315d840f4d9e8926afcf48f5abe: 0.304
     51c09b060d5014f83908c2e19f273069: 116
-    190efd56fcf0447cd901b88294ee42de: 1.53
+    190efd56fcf0447cd901b88294ee42de: 1.32
     82f6f5e9fa64b4baa822712acfa8a180: 57
     1588232c864324888b042204b192017d: 750
+    95d78eaeefb0742e7aef9aa4310e5aee: 4.04
     b4b5dafe91dcd429ab6d6b51726457da: 104
     4224d62f1f1e54503a68f49b02f4c55d: -5647
     219dabef8f6134a2e99c8c426757fa55: 0.547
