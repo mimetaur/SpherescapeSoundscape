@@ -9,7 +9,6 @@ public class RepelAudioController : MonoBehaviour
     public RangeFloat intensityToFilterAmountRange = new RangeFloat(70f, 80f); // originally 76.5
     public RangeFloat intensityToLfoSpeedAmountRange = new RangeFloat(30f, 50f); // originally 40
 
-    private BallMusicalNotes ballMusicalNotes;
     private Hv_spherescapeRepel_AudioLib heavyScript;
     private Repel repel;
 
@@ -20,14 +19,12 @@ public class RepelAudioController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        repel = GetComponent<Repel>();
+        heavyScript = GetComponent<Hv_spherescapeRepel_AudioLib>();
+
         updateRate = updateRateRange.GetRandomValueFromRange();
         intensityToFilterAmount = intensityToFilterAmountRange.GetRandomValueFromRange();
         intensityToLfoSpeedAmount = intensityToLfoSpeedAmountRange.GetRandomValueFromRange();
-
-        ballMusicalNotes = GameObject.Find("GameManager").GetComponent<BallMusicalNotes>();
-        repel = GetComponent<Repel>();
-
-        heavyScript = GetComponent<Hv_spherescapeRepel_AudioLib>();
 
         // each sphere has a different note, set at startup in the spawn script via BallMusicalNotes class
         heavyScript.SetFloatParameter(Hv_spherescapeRepel_AudioLib.Parameter.Noteasnumber, (float)currentNote);
