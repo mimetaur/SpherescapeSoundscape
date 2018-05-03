@@ -1,7 +1,7 @@
-#N canvas 629 52 1459 791 10;
+#N canvas 589 52 1459 791 10;
 #X declare -path heavylib;
 #X obj 213 106 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 40 256;
 #X obj 279 699 dac~;
 #X obj 291 608 voice~, f 27;
 #X obj 46 22 declare -path heavylib;

@@ -3362,7 +3362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scale: 240000002a00000022000000280000002b00000032000000
-  addOctaveUp: 0
+  addOctaveUp: 1
   addOctaveDown: 0
 --- !u!114 &1996816365
 MonoBehaviour:
@@ -3414,8 +3414,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7468424, y: 2.542183, z: 2.3666685}
-  m_Center: {x: 2.316674, y: 1.2731667, z: 0.41503248}
+  m_Size: {x: 0.938625, y: 2.542183, z: 2.3666685}
+  m_Center: {x: 1.91257, y: 1.2731667, z: 0.41503248}
 --- !u!4 &2005647322
 Transform:
   m_ObjectHideFlags: 0
