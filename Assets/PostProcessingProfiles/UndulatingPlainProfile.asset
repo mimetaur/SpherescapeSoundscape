@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1
+      intensity: 1.5
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -121,7 +121,7 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 1.5
-        temperature: 12
+        temperature: 6
         tint: 0
         hueShift: 0
         saturation: 1
