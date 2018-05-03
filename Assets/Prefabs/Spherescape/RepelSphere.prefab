@@ -262,8 +262,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentNote: 64
-  updateRateLow: 4
-  updateRateHigh: 6
+  updateRateRange:
+    lowBound: 2
+    highBound: 6
+  intensityToFilterAmountRange:
+    lowBound: 70
+    highBound: 80
+  intensityToLfoSpeedAmountRange:
+    lowBound: 30
+    highBound: 50
 --- !u!135 &135793516815263268
 SphereCollider:
   m_ObjectHideFlags: 1
