@@ -77,10 +77,10 @@ AudioMixerSnapshotController:
     a1a47993ab8044db0aa1cc711d630faf: 0.261
     244bb1241ccdd49649e9db87afa45676: -1181
     8d442744a0957444fbeb5c9fe14b3170: -30.8
-    a2f6985404be84f5cbeaab057e0b9ac0: 12
+    a2f6985404be84f5cbeaab057e0b9ac0: 7.9
     4861bf74513784d979450274a19ac9a7: 447
     c7ce3b84d9e3a43f68265ddebee37372: 10
-    86728dc4338ab4d0eb8a1eae4af0bc79: -35.6
+    86728dc4338ab4d0eb8a1eae4af0bc79: -35.7
     a3d77b2588e8944e48caf2e67b9635b0: 0.65599996
     fe2b56355c446441ab32d72b5963e5ff: 750
     75975c555a3f649728756b88d975fac8: 12.96
@@ -90,14 +90,15 @@ AudioMixerSnapshotController:
     b4ad24365eb584fcd8b44d5130b024d2: 1.66
     97d34f56d92714c1f9fa59bac6a4d021: 3217
     54620f66f4be84cbb85eb71d6ba1cdd3: -19.8
-    a4dd64b677feb4458873e3f0dfeb016d: 301
+    a4dd64b677feb4458873e3f0dfeb016d: 533
     a0125637882294d1fa0ce781c9207054: 17.3
     ecbe1db7529ab40e1b8296665c62ca84: 146.7
     37fa9bc771f7b447c9db8d223535dc13: -27.4
     57fc0998e0b344fa8ad1d57eada482e0: -2479
+    0af00d9805b784f20a3f25e92a3bbc9d: 103
     4eaf23b88e5db40d198ccc6283c07974: 1.19
     1afed4b8fc57849e6b37ac65dc9a9c7a: 4.7
-    d29a23c81aab346d084bc195db583612: 109.2
+    d29a23c81aab346d084bc195db583612: 185.4
     636ae1293caa8405b9e57266f3fc154e: 26
     2046ff3947f5744709c19bb3f6c2701c: 0.063
     85d82b695fb4f43d89b8c946b7821f87: 4
@@ -116,7 +117,7 @@ AudioMixerSnapshotController:
     c9c914bb59a514658a0e47fc0a83b61d: 20
     9c2bc4cb1fe824443acb9ab9ab93575f: 202
     b7a14f0ceb76748e28c5ecf4a25d85e5: 11
-    6f73022cfca344a78a73f247250c6967: -2.3278804
+    6f73022cfca344a78a73f247250c6967: -12.021133
     f14a0acc056ff4e8ca927ba7a9bc6ffa: -45.9
     fb527cfc6d7cb4fb18a29af4bf17c3f4: 0.076
     61ac684dc5b574d3fa991f774ca0e877: 0.065
@@ -125,7 +126,7 @@ AudioMixerSnapshotController:
     854298bef178341fcaba90a01cb524e3: 100
     89ab494f6e4bf4ff9905639b72dda78e: -7274
     258fa06f63df74438a780b7d1466bbf5: 13.71
-    e6ba579fbc4104fd0963958c5c169334: -7.894088
+    e6ba579fbc4104fd0963958c5c169334: -13.637277
   m_TransitionOverrides: {}
 --- !u!243 &243319069929050914
 AudioMixerGroupController:
@@ -140,6 +141,7 @@ AudioMixerGroupController:
   m_Pitch: 6f1095d84d66545259d7f6de11978f5b
   m_Effects:
   - {fileID: 244925553362799300}
+  - {fileID: 244661212397189622}
   - {fileID: 244267803292675286}
   m_UserColorIndex: 0
   m_Mute: 0
@@ -181,6 +183,21 @@ AudioMixerEffectController:
     m_GUID: a4dd64b677feb4458873e3f0dfeb016d
   - m_ParameterName: Make up gain
     m_GUID: a2f6985404be84f5cbeaab057e0b9ac0
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 1
+--- !u!244 &244661212397189622
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 40ab125e9112c475c9c7efad475b0bcb
+  m_EffectName: Highpass Simple
+  m_MixLevel: cccf76eb5e7d049fdb6ec9422ab41f92
+  m_Parameters:
+  - m_ParameterName: Cutoff freq
+    m_GUID: 0af00d9805b784f20a3f25e92a3bbc9d
   m_SendTarget: {fileID: 0}
   m_EnableWetMix: 0
   m_Bypass: 0

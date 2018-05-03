@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brightColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 1}
   brightnessFactor: 3
-  updateRate: 1
+  updateRate: 2
 --- !u!114 &114100137542324136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98188bb01fda4ed185de0ecb27d8746, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  repelRadius: 8
+  repelRadius: 4
   repelForce: 480
   expectedMaxNumberOfBallsRepelling: 25
   numberOfBallsRepelling: 0
@@ -262,7 +262,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentNote: 0
-  updateRate: 2
+  updateRateLow: 2
+  updateRateHigh: 6
 --- !u!135 &135793516815263268
 SphereCollider:
   m_ObjectHideFlags: 1

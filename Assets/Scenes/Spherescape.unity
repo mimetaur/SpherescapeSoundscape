@@ -500,8 +500,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.0148904, y: 2.542183, z: 0.21522465}
-  m_Center: {x: 1.2367165, y: 1.2731667, z: -0.6606906}
+  m_Size: {x: 3.0148904, y: 2.542183, z: 0.40144902}
+  m_Center: {x: 1.2367165, y: 1.2731667, z: -0.56757843}
 --- !u!1 &124191361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2634,8 +2634,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.40865594, y: 2.542183, z: 2.3301823}
-  m_Center: {x: 0.3411394, y: 1.2731667, z: -0.9602682}
+  m_Size: {x: 1.0435175, y: 2.542183, z: 2.7449582}
+  m_Center: {x: 0.65857023, y: 1.2731667, z: -0.94757026}
 --- !u!4 &1407453830
 Transform:
   m_ObjectHideFlags: 0
@@ -3347,7 +3347,7 @@ MonoBehaviour:
   area: {fileID: 1407453828}
   numSimultaneousBalls: 4
   initialDelay: 4
-  spawnRate: 14
+  spawnRate: 22
   useRandomBallTypes: 0
   ballTypes: []
 --- !u!114 &1996816362
