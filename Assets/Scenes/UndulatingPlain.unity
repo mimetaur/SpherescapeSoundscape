@@ -558,6 +558,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   metallicCycleTime: 10
   iceCycleTime: 30
+  echoCycleTime: 60
 --- !u!1 &679663022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1337,16 @@ Prefab:
         type: 2}
       propertyPath: resonanceRange.highBound
       value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114330619677238184, guid: f73fc2e1d8fcc4e789818d335416b0a2,
+        type: 2}
+      propertyPath: echoRange.lowBound
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114330619677238184, guid: f73fc2e1d8fcc4e789818d335416b0a2,
+        type: 2}
+      propertyPath: echoRange.highBound
+      value: 0.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f73fc2e1d8fcc4e789818d335416b0a2, type: 2}

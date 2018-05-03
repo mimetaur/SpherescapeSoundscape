@@ -8,6 +8,7 @@ public class UndulatingAudioController : MonoBehaviour
     public AudioMixer mixer;
     public RangeFloat cutoffRange = new RangeFloat(500f, 1200f);
     public RangeFloat resonanceRange = new RangeFloat(1f, 2.5f);
+    public RangeFloat echoRange = new RangeFloat(0.2f, 0.8f);
 
     private Hv_prototype03_AudioLib heavyScript;
     private PlainManager plainManager;
@@ -30,15 +31,19 @@ public class UndulatingAudioController : MonoBehaviour
 
     private void Update()
     {
-        float longSlowLerp = plainManager.GetIceLerp();
+        float iceLerp = plainManager.GetIceLerp();
 
-        float cutoffParam = GameUtils.Map(longSlowLerp, 0f, 1f, cutoffRange.Low(), cutoffRange.High());
+        float cutoffParam = GameUtils.Map(iceLerp, 0f, 1f, cutoffRange.Low(), cutoffRange.High());
         mixer.SetFloat("LowpassCutoff", cutoffParam);
 
-        float resonanceParam = GameUtils.Map(longSlowLerp, 0f, 1f, resonanceRange.Low(), resonanceRange.High());
+        float resonanceParam = GameUtils.Map(iceLerp, 0f, 1f, resonanceRange.Low(), resonanceRange.High());
         mixer.SetFloat("LowpassResonance", resonanceParam);
 
-        float metalLerp = plainManager.GetMetalLerp();
+        float echoLerp = plainManager.GetEchoLerp();
+        float echoParam = GameUtils.Map(echoLerp, 0f, 1f, echoRange.Low(), echoRange.High());
+        mixer.SetFloat("EchoDecay", echoParam);
+
+        // float metalLerp = plainManager.GetMetalLerp();
         // float cutoffParam = GameUtils.Map(iceLerp, 0f, 1f, 500f, 1200.0f);
         // float metalParam = GameUtils.Map(metalLerp, 0.5f, 1f, 0f, 127f);
         // float cutoffParam = GameUtils.Map(metalLerp, 0.5f, 1f, 0f, 1200.0f);
