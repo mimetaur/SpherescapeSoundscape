@@ -204,8 +204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brightColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 1}
-  brightnessFactor: 3
-  updateRate: 2
+  brightnessFactor: 2.5
+  updateRate: 0.06
 --- !u!114 &114100137542324136
 MonoBehaviour:
   m_ObjectHideFlags: 1

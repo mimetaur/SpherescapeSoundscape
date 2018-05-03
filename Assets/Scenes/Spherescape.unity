@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.22673431, g: 0.24332348, b: 0.29125085, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -3363,7 +3363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scale: 240000002a00000022000000280000002b00000032000000
   addOctaveUp: 1
-  addOctaveDown: 0
+  addOctaveDown: 1
 --- !u!114 &1996816365
 MonoBehaviour:
   m_ObjectHideFlags: 0
