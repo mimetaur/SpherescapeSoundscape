@@ -1258,22 +1258,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af10738c6c7c94a5699fc96a06db75e5, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &985107584 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1370872828641076, guid: f73fc2e1d8fcc4e789818d335416b0a2,
-    type: 2}
-  m_PrefabInternal: {fileID: 1045344217}
---- !u!114 &985107585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 985107584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc91671c2eb3f4f56aa0eb8672c7ced8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &994964585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,26 +1327,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 82273142643144672, guid: f73fc2e1d8fcc4e789818d335416b0a2,
+    - target: {fileID: 114330619677238184, guid: f73fc2e1d8fcc4e789818d335416b0a2,
         type: 2}
-      propertyPath: OutputAudioMixerGroup
-      value: 
-      objectReference: {fileID: 24300002, guid: 315b9cd5a5f504d7192d83831e4f53a0,
-        type: 2}
-    - target: {fileID: 82273142643144672, guid: f73fc2e1d8fcc4e789818d335416b0a2,
-        type: 2}
-      propertyPath: spreadCustomCurve.m_RotationOrder
-      value: 0
+      propertyPath: cutoffRange.lowBound
+      value: 600
       objectReference: {fileID: 0}
-    - target: {fileID: 82273142643144672, guid: f73fc2e1d8fcc4e789818d335416b0a2,
+    - target: {fileID: 114330619677238184, guid: f73fc2e1d8fcc4e789818d335416b0a2,
         type: 2}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 82273142643144672, guid: f73fc2e1d8fcc4e789818d335416b0a2,
-        type: 2}
-      propertyPath: MaxDistance
-      value: 532.2396
+      propertyPath: resonanceRange.highBound
+      value: 2.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f73fc2e1d8fcc4e789818d335416b0a2, type: 2}

@@ -18,4 +18,14 @@ public class RangeFloat
     {
         return Mathf.Floor(Random.Range(lowBound, highBound));
     }
+
+    public float Low()
+    {
+        return lowBound;
+    }
+
+    public float High()
+    {
+        return highBound;
+    }
 }
