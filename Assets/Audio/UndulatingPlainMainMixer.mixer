@@ -15,12 +15,14 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
+  - guid: 49a5ce12d6b8c450eb0b6fa7bb63d747
+    name: MasterVolume
   - guid: c17622b36ed0e49138b83f69551cd881
     name: EchoDecay
-  - guid: 85ac00436a4a241a3a2e6474a1fce408
-    name: LowpassCutoff
   - guid: 190efd56fcf0447cd901b88294ee42de
     name: LowpassResonance
+  - guid: 85ac00436a4a241a3a2e6474a1fce408
+    name: LowpassCutoff
   m_AudioMixerGroupViews:
   - guids:
     - b0aafb1c81d24499cafd631b924f48d0
@@ -40,6 +42,7 @@ AudioMixerGroupController:
   m_Pitch: 8d8fd7555cd4549d8b057d2299301e8a
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: 244308656174363256}
   - {fileID: 244788790944780856}
   - {fileID: 244734704360348700}
   - {fileID: 244825163173438054}
@@ -79,6 +82,7 @@ AudioMixerSnapshotController:
     85ac00436a4a241a3a2e6474a1fce408: 1107
     c17622b36ed0e49138b83f69551cd881: 0.207
     9cdf12f3a4255485ead45557cd397e03: 1
+    88c5f6a4b5d46423a8561a63b60aa5f3: 4
     a0caa315d840f4d9e8926afcf48f5abe: 0.304
     51c09b060d5014f83908c2e19f273069: 116
     190efd56fcf0447cd901b88294ee42de: 1.32
@@ -89,6 +93,27 @@ AudioMixerSnapshotController:
     4224d62f1f1e54503a68f49b02f4c55d: -5647
     219dabef8f6134a2e99c8c426757fa55: 0.547
   m_TransitionOverrides: {}
+--- !u!244 &244308656174363256
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  m_EffectID: 9827739eef70f41889cf0bdacf72a6a4
+  m_EffectName: Compressor
+  m_MixLevel: d8e52bdb2cf004d218e20d2e8550ef5b
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 307ac5766bff3469396ac1552d8d222f
+  - m_ParameterName: Attack
+    m_GUID: 927521de7a018429cad1ed26d162589e
+  - m_ParameterName: Release
+    m_GUID: bd624c5d766de4c98b99bb9cc4d87692
+  - m_ParameterName: Make up gain
+    m_GUID: 88c5f6a4b5d46423a8561a63b60aa5f3
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!244 &244581042390104638
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
