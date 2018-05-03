@@ -15,10 +15,12 @@ AudioMixerController:
   m_EnableSuspend: 1
   m_UpdateMode: 0
   m_ExposedParameters:
-  - guid: 190efd56fcf0447cd901b88294ee42de
-    name: LowpassResonance
+  - guid: c17622b36ed0e49138b83f69551cd881
+    name: EchoDecay
   - guid: 85ac00436a4a241a3a2e6474a1fce408
     name: LowpassCutoff
+  - guid: 190efd56fcf0447cd901b88294ee42de
+    name: LowpassResonance
   m_AudioMixerGroupViews:
   - guids:
     - b0aafb1c81d24499cafd631b924f48d0
@@ -39,9 +41,9 @@ AudioMixerGroupController:
   m_Effects:
   - {fileID: 24400004}
   - {fileID: 244788790944780856}
-  - {fileID: 244581042390104638}
-  - {fileID: 244825163173438054}
   - {fileID: 244734704360348700}
+  - {fileID: 244825163173438054}
+  - {fileID: 244581042390104638}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0

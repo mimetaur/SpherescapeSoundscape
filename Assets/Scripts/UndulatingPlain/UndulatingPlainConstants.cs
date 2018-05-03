@@ -12,4 +12,7 @@ public static class UndulatingPlainConstants
 
     public const float iceLerpValueRange = 1.0f;
     public const float iceLerpValueOffset = 0f;
+
+    public const float echoLerpValueRange = 1.0f;
+    public const float echoLerpValueOffset = 0f;
 }
