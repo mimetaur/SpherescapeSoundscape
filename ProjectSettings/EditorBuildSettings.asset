@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Spherescape.unity
-    guid: 3030d5fc7e7ee4c00956c24edeb9fa3b
+    path: Assets/Scenes/UndulatingPlain.unity
+    guid: 960f8aa00b6004b1aa1fc8369a6d66ab
