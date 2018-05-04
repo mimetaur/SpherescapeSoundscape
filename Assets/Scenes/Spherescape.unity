@@ -2018,6 +2018,7 @@ GameObject:
   - component: {fileID: 1015530770}
   - component: {fileID: 1015530775}
   - component: {fileID: 1015530774}
+  - component: {fileID: 1015530776}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -2115,6 +2116,20 @@ MonoBehaviour:
   cameraOriginal: {fileID: 124191362}
   cameraChangeSpeed: 12
   smooth: 0.2
+--- !u!114 &1015530776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015530769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59ae4f317f9b4f8b8d64f71768aaea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sourceTexture: {fileID: 0}
+  _alphaSupport: 0
+  _blitShader: {fileID: 4800000, guid: 1357bcacfdfbc48b290065349adbfb93, type: 3}
 --- !u!1001 &1034343594
 Prefab:
   m_ObjectHideFlags: 0
@@ -3282,6 +3297,7 @@ GameObject:
   - component: {fileID: 1996816361}
   - component: {fileID: 1996816365}
   - component: {fileID: 1996816362}
+  - component: {fileID: 1996816363}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3364,6 +3380,18 @@ MonoBehaviour:
   scale: 240000002a00000022000000280000002b00000032000000
   addOctaveUp: 1
   addOctaveDown: 1
+--- !u!114 &1996816363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1996816358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a043ea6e843fb426f8c85c8dec130939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frameRate: 30
 --- !u!114 &1996816365
 MonoBehaviour:
   m_ObjectHideFlags: 0
