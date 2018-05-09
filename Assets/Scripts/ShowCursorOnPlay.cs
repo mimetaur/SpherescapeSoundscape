@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HideCursorOnPlay : MonoBehaviour
+public class ShowCursorOnPlay : MonoBehaviour
 {
 
     void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = true;
     }
-
 }
