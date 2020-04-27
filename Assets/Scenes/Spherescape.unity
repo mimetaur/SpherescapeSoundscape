@@ -1879,7 +1879,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2414,7 +2414,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 519933154, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - {fileID: 2100000, guid: 76bad0c5feec54f1c834279a09b7654e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3321,17 +3321,17 @@ MonoBehaviour:
   spawnRate: 14
   useRandomBallTypes: 1
   ballTypes:
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.3
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.3
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.5
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.35
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.4
-  - mat: {fileID: -1739855478, guid: a0b98d747a0cd45d8adb0e1776bc9a2e, type: 3}
+  - mat: {fileID: 2100000, guid: 47434add469184d51a35e6946ae8d2f8, type: 2}
     size: 0.45
 --- !u!114 &1996816361
 MonoBehaviour:
