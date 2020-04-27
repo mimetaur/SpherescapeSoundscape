@@ -4,24 +4,35 @@ using UnityEngine;
 
 public class RepelBrightnessController : MonoBehaviour
 {
-
-    public Color brightColor;
-    public float brightnessFactor = 3.0f;
-    private Repel repel;
-    private Material myMaterial;
+    [ColorUsageAttribute(false, false)] public Color plainColor;
+    [ColorUsageAttribute(false, true)] public Color emissiveColor;
     public float updateRate = 1.0f;
 
-    // Use this for initialization
+    private float t = 0.0f;
+    private Repel repel;
+    private Renderer rend;
+
     void Start()
     {
         repel = GetComponent<Repel>();
-        myMaterial = GetComponent<Renderer>().material;
+        rend = GetComponent<Renderer>();
+
+        rend.material.shader = Shader.Find("HDRP/Lit");
         InvokeRepeating("UpdateBrightness", updateRate, updateRate);
     }
 
     void UpdateBrightness()
     {
-        float amount = GameUtils.Map(repel.numberOfBallsRepelling, 0, repel.expectedMaxNumberOfBallsRepelling, 0.0f, 1.0f);
-        myMaterial.color = Color.Lerp(myMaterial.color, brightColor * brightnessFactor, amount);
+        t = GameUtils.Map(repel.numberOfBallsRepelling, 0, repel.expectedMaxNumberOfBallsRepelling, 0.0f, 1.0f);
+    }
+
+    void Update()
+    {
+        Color currentColor = Color.Lerp(plainColor, emissiveColor, t);
+        rend.material.SetColor("_EmissiveColor", currentColor);
+        // float emissiveIntensity = Mathf.Lerp(darkEmissionIntensity, brightEmissionIntensity, t);
+        // rend.material.SetFloat("_EmissiveIntensity", emissiveIntensity);
+        // myMaterial.color = Color.Lerp(myMaterial.color, brightColor * brightnessFactor, amount);
+        // myMaterial._EmissiveIntensity =
     }
 }
