@@ -70,6 +70,7 @@ Recordings/
 # Cinema 4D cache files
 *.gil
 substance_cache/
+*.painter_lock
 
 # Adobe audition cache files
 *.pkf
