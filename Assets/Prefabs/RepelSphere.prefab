@@ -304,5 +304,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plainColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 0}
-  emissiveColor: {r: 23.968628, g: 4.894118, b: 4.894118, a: 0}
+  emissiveColor: {r: 95.87451, g: 19.576471, b: 19.576471, a: 0}
   updateRate: 0.05
