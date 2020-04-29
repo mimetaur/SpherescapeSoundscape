@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class RepelBrightnessController : MonoBehaviour
 {
-    [ColorUsageAttribute(false, false)] public Color plainColor;
     [ColorUsageAttribute(false, true)] public Color emissiveColor;
     public float updateRate = 1.0f;
 
     private float t = 0.0f;
     private Repel repel;
     private Renderer rend;
+    private Color plainColor;
 
     void Start()
     {
@@ -18,6 +18,8 @@ public class RepelBrightnessController : MonoBehaviour
         rend = GetComponent<Renderer>();
 
         rend.material.shader = Shader.Find("HDRP/Lit");
+        plainColor = rend.material.GetColor("_EmissiveColor");
+
         InvokeRepeating("UpdateBrightness", updateRate, updateRate);
     }
 

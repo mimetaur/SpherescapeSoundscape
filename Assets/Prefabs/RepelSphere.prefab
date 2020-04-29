@@ -303,6 +303,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86574725224cd4def8b53542081a1dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plainColor: {r: 0.93333334, g: 0.18431373, b: 0.18431373, a: 0}
-  emissiveColor: {r: 95.87451, g: 19.576471, b: 19.576471, a: 0}
-  updateRate: 0.05
+  emissiveColor: {r: 47.937256, g: 0, b: 0, a: 0}
+  updateRate: 0.01

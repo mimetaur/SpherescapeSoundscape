@@ -3,8 +3,9 @@
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: SpherescapeMainMixer
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
@@ -26,8 +27,9 @@ AudioMixerController:
 --- !u!243 &24300002
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Master
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: c19fbb64cc7ed403e8caa8f9272d8cab
@@ -36,6 +38,7 @@ AudioMixerGroupController:
   - {fileID: 243319069929050914}
   m_Volume: 943acd9befc294aff96dd41b81d911a7
   m_Pitch: 6eb58a34bccc743bf86cd391b257c27d
+  m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
   - {fileID: 244745903152812094}
@@ -46,8 +49,9 @@ AudioMixerGroupController:
 --- !u!244 &24400004
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: 9d8c51c3001b64c77828fae6718f2e4e
   m_EffectName: Attenuation
@@ -59,8 +63,9 @@ AudioMixerEffectController:
 --- !u!245 &24500006
 AudioMixerSnapshotController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Snapshot
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 457e110a5f36844a7a4766498e13a35c
@@ -122,7 +127,7 @@ AudioMixerSnapshotController:
     c9c914bb59a514658a0e47fc0a83b61d: 20
     9c2bc4cb1fe824443acb9ab9ab93575f: 202
     b7a14f0ceb76748e28c5ecf4a25d85e5: 11
-    6f73022cfca344a78a73f247250c6967: -11.476086
+    6f73022cfca344a78a73f247250c6967: -6.6165123
     f14a0acc056ff4e8ca927ba7a9bc6ffa: -45.9
     fb527cfc6d7cb4fb18a29af4bf17c3f4: 0.076
     61ac684dc5b574d3fa991f774ca0e877: 0.065
@@ -137,14 +142,16 @@ AudioMixerSnapshotController:
 --- !u!243 &243319069929050914
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: RepelDrone
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 24a699471489642c18c83707b38e7e34
   m_Children: []
   m_Volume: e6ba579fbc4104fd0963958c5c169334
   m_Pitch: 6f1095d84d66545259d7f6de11978f5b
+  m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 244925553362799300}
   - {fileID: 244661212397189622}
@@ -156,14 +163,16 @@ AudioMixerGroupController:
 --- !u!243 &243836308778020614
 AudioMixerGroupController:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: SphereCollisions
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: 00f0fccc95d6e41ee9d08885145aeddd
   m_Children: []
   m_Volume: 6f73022cfca344a78a73f247250c6967
   m_Pitch: b08f4e7ce7a134075bb3d3893eee1623
+  m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 244816705318561580}
   - {fileID: 244916267016741572}
@@ -174,8 +183,9 @@ AudioMixerGroupController:
 --- !u!244 &244417432926209148
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: e9cf2dbeace0341fdbc8ee9b5cfc5d12
   m_EffectName: SFX Reverb
@@ -215,8 +225,9 @@ AudioMixerEffectController:
 --- !u!244 &244661212397189622
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: 40ab125e9112c475c9c7efad475b0bcb
   m_EffectName: Highpass Simple
@@ -230,8 +241,9 @@ AudioMixerEffectController:
 --- !u!244 &244745903152812094
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: 0b07c0e3d258c4a568eb4a2ea94ce274
   m_EffectName: Compressor
@@ -251,8 +263,9 @@ AudioMixerEffectController:
 --- !u!244 &244816705318561580
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: 0bd98d45498014e2982d04485717ddcc
   m_EffectName: Attenuation
@@ -264,8 +277,9 @@ AudioMixerEffectController:
 --- !u!244 &244916267016741572
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: f0f6b862624a24a69882d72a38ea7476
   m_EffectName: SFX Reverb
@@ -305,8 +319,9 @@ AudioMixerEffectController:
 --- !u!244 &244925553362799300
 AudioMixerEffectController:
   m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_EffectID: 0b4cc31b802494e3e8a6249f53854db6
   m_EffectName: Attenuation
