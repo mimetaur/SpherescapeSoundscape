@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   repelRadius: 6
-  repelForce: 480
+  repelForce: 700
   expectedMaxNumberOfBallsRepelling: 25
   numberOfBallsRepelling: 0
   tagToRepel: Ball
