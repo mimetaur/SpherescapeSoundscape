@@ -4,7 +4,6 @@
 *.meta linguist-generated
 *.prefab linguist-generated
 *.unity linguist-generated
-
 ## git-lfs ##
 # Image
 *.jpg filter=lfs diff=lfs merge=lfs -text
