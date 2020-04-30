@@ -25,11 +25,13 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+.autosave/
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
 [Bb]uild/
 [Bb]uilds/
+[Bb]ackup/
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
@@ -68,6 +70,7 @@ Recordings/
 # Cinema 4D cache files
 *.gil
 substance_cache/
+*.painter_lock
 
 # Adobe audition cache files
 *.pkf
