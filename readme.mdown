@@ -2,6 +2,6 @@
 
 Long-running audiovisual simulation.
 
-[![Spherescape Soundscape]](https://vimeo.com/414329466)
+[![Spherescape SoundScape](thumbnail.jpg)](https://vimeo.com/414329466)
 
 One of a series of long-running audiovisual installation works I created in Unity. Remastered in 2020 using the high-definition render pipeline.
